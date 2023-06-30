@@ -171,7 +171,9 @@ int main()
 		printf("Escolha a opção desejada: \n\n"); // inicio do menu
 		printf("\t1 - Fazer um Cadastro \n");
 		printf("\t2 - Consultar um Cadastro \n");
-		printf("\t3 - Deletar dado Cadastrado \n\n\n");
+		printf("\t3 - Deletar dado Cadastrado \n\n");
+		printf("\t4 - Sair do sistema\n\n");
+		
 		printf("\nOpção:  "); // fim do menu
 	
 		scanf("%d",&opcao); // faz um scan do que o usuário escolhe e armazena na variável opcao
@@ -192,10 +194,18 @@ int main()
 			deletar();
 			break;
 			
+			case 4:
+			printf(" - Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
+			
 			default: // 
 			printf("\n\n - Essa opçao não está diponível\n\n");
 			system("pause");
 			break;
+			
+			
+			
 		}
 		
 		
